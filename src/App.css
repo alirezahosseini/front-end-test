@@ -13,6 +13,26 @@
   }
 }
 
+
+.header{
+  background: linear-gradient(90deg,#34f1c8 0,#3bb4d8);
+}
+
+
+.logo-name-header > span{
+  color:#fff;
+}
+
+.footer-logo-name
+> img{
+  height: 5rem;
+}
+
+.logo-name-header > img{
+  height: 5rem;
+}
+
+
 .App-header {
   background-color: #282c34;
   min-height: 100vh;
@@ -28,6 +48,56 @@
   color: #61dafb;
 }
 
+#navbar-user > ul > li > a:hover{
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-image: linear-gradient(90deg, #34f1c8 0, #3bb4d8);
+
+}
+
+#navbar-user > ul > li > a{
+color: black;
+}
+
+html.dark #navbar-user > ul > li > a{
+  color: #fff;
+}
+
+.Breadcrumb-content{
+  z-index: 0!important;
+  width: 100%;
+  height: 380px;
+  display: flex;
+  position:relative;
+  justify-content: center;
+  align-items: center;
+  background: black url("../public/bg-breadcrumb.jpg")center top no-repeat;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+.Breadcrumb-content > ol > li  a{
+  color: #fff!important;
+  display: flex;
+  position:relative;
+  filter: inherit!important;
+  z-index: 999!important;
+}
+
+.Breadcrumb-content > ol > li a:hover{
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-image: linear-gradient(90deg, #34f1c8 0, #3bb4d8)!important;
+}
+
+.MuiFormControl-root{
+  margin: 10px!important;
+}
+
 @keyframes App-logo-spin {
   from {
     transform: rotate(0deg);
@@ -35,4 +105,16 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+html.dark .header{
+  background:#374151;
+}
+
+html.dark body{
+  background:#374151;
+}
+
+html.dark footer{
+  background:#374151;
 }
